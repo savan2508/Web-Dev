@@ -1,8 +1,20 @@
 html {
   background-color: #E4E9FD;
   background-image: -webkit-linear-gradient(65deg, #A683E3 50%, #E4E9FD 50%);
-  min-height: 1000px;
+  min-height: 100vh;
   font-family: 'helvetica neue';
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.container {
+  flex: 1; /* Allow the container to take up remaining space */
 }
 
 h1 {
@@ -93,4 +105,12 @@ footer {
   color: white;
   color: rgba(0, 0, 0, 0.5);
   text-align: center;
+  text-align: center;
+  font-size: smaller;
+}
+
+footer p {
+  font-size: smaller;
+  margin: auto;
+  padding: 2px;
 }
