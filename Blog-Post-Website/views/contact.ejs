@@ -1,0 +1,20 @@
+<%- include ('partials/header.ejs'); -%>
+
+<h1>Contact</h1>
+  <p>Name: Savan Patel</p>
+  <p>Email: <a href="mailto:sawanpatel2508@gmail.com">sawanpatel2508@gmail.com</a></p>
+  <p>Website: <a href="https://savan2508.github.io/savan-website/" target="_blank">https://savan2508.github.io/savan-website/</a></p>
+  <p>LinkedIn: <a href="https://www.linkedin.com/in/savanpatel/" target="_blank">https://www.linkedin.com/in/savan-patel-577a6669/</a></p>
+  
+  <h2>Contact Form</h2>
+  <form action="mailto:sawanpatel2508@gmail.com" method="POST" enctype="text/plain">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name" required><br>
+    <label for="email">Email:</label>
+    <input type="text" id="email" name="email" required><br>
+    <label for="message">Message:</label><br>
+    <textarea id="message" name="message" rows="4" required></textarea><br>
+    <input type="submit" value="Contact" class="btn btn-primary">
+  </form>
+
+<%- include ('partials/footer.ejs'); -%>
