@@ -37,31 +37,33 @@ const listSchema = new mongoose.Schema({
 
 const List = mongoose.model("List", listSchema)
 
-app.get("/", function(req, res){
-    Item.find({}).then(function(foundItems){
-        if (foundItems.length === 0){
-            Item.insertMany(defaultItems).then(function(){
+app.get("/", function (req, res) {
+    Item.find({}).then(function (foundItems) {
+        if (foundItems.length === 0) {
+            Item.insertMany(defaultItems).then(function () {
                 console.log("Successfully saved default items to DB.");
             })
-                .catch(function(err){
+                .catch(function (err) {
                     console.log(err);
                 });
             res.redirect("/")
         } else {
-            res.render("list", {day: "It's a " + currentDay(),
+            res.render("list", {
+                day: "It's a " + currentDay(),
                 newListItems: foundItems,
-                listTitle: currentDay()});
+                listTitle: currentDay()
+            });
         }
     })
-        .catch(function(err){
+        .catch(function (err) {
             console.log(err);
         });
 });
 
-app.get("/:customListName", function(req, res){
+app.get("/:customListName", function (req, res) {
     const customListName = req.params.customListName;
 
-    List.findOne({name: customListName}).then(function (foundList){
+    List.findOne({name: customListName}).then(function (foundList) {
         if (!foundList) {
             // If the list doesn't exist, create a new one with default items
             const list = new List({
@@ -73,7 +75,11 @@ app.get("/:customListName", function(req, res){
                 res.redirect("/" + customListName);
             });
         } else {
-            res.render("list", { day: foundList.name + " list", newListItems: foundList.items, listTitle: foundList.name})
+            res.render("list", {
+                day: foundList.name + " list",
+                newListItems: foundList.items,
+                listTitle: foundList.name
+            })
         }
     })
         .catch(function (err) {
@@ -81,7 +87,7 @@ app.get("/:customListName", function(req, res){
         });
 });
 
-app.post("/", function(req, res){
+app.post("/", function (req, res) {
     const extract_item = req.body.toDoItem;
     const listName = req.body.list;
 
@@ -89,14 +95,13 @@ app.post("/", function(req, res){
         name: extract_item
     });
 
-    if (listName === currentDay()){
+    if (listName === currentDay()) {
         newItem.save()
         res.redirect("/")
-    }
-    else {
-        List.findOne({name: listName}).then(function (foundList){
+    } else {
+        List.findOne({name: listName}).then(function (foundList) {
             foundList.items.push(newItem)
-            foundList.save().then(function (){
+            foundList.save().then(function () {
                 res.redirect("/" + listName)
             })
         })
@@ -104,20 +109,31 @@ app.post("/", function(req, res){
 });
 
 app.post("/delete", function (req, res) {
-    const checkedItemId = req.body.checkbox;
-    Item.findByIdAndRemove(checkedItemId).then(function(){
-        console.log("Successfully deleted items from the DB.");
-        res.redirect("/")
-    })
-        .catch(function(err){
-            console.log(err);
-        });
-})
+        const checkedItemId = req.body.checkbox;
+        const listName = req.body.listName;
 
-app.listen(3000, function(){
+        if (listName === currentDay()) {
+            Item.findByIdAndRemove(checkedItemId).then(function () {
+                console.log("Successfully deleted items from the DB.");
+                res.redirect("/")
+            })
+                .catch(function (err) {
+                    console.log(err);
+                });
+        } else {
+            List.findOneAndUpdate({name: listName}, {$pull: {items: {_id: checkedItemId}}}).then(function () {
+                res.redirect("/" + listName);
+            })
+                .catch(function (err) {
+                    console.log(err);
+                });
+        }
+    }
+)
+
+app.listen(3000, function () {
     console.log("Server is started on port 3000.");
 });
-
 function currentDay() {
     const today = new Date();
 
