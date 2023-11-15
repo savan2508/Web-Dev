@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="03ab838e-5550-41ca-9662-a810fe0f9820" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Secrets - Starting Code/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secrets - Starting Code/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secrets - Starting Code/.idea/Secrets - Starting Code.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secrets - Starting Code/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secrets - Starting Code/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secrets - Starting Code/app.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secrets - Starting Code/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secrets - Starting Code/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secrets - Starting Code/public/css/styles.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secrets - Starting Code/views/home.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secrets - Starting Code/views/login.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secrets - Starting Code/views/partials/footer.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secrets - Starting Code/views/partials/header.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secrets - Starting Code/views/register.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secrets - Starting Code/views/secrets.ejs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Secrets - Starting Code/views/submit.ejs" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 1
+}</component>
+  <component name="ProjectId" id="2UzKi6JCujmUEQRV09IGOREvFlJ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;side&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\sawan\\OneDrive\\Programming\\Courses\\Web Dev\\keeper-app\\keeper-app\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="ReactDesignerToolWindowState">
+    <option name="myId2Visible">
+      <map>
+        <entry key="com.haulmont.rcb.reactComponents" value="false" />
+        <entry key="com.haulmont.rcb.reactInspector" value="false" />
+        <entry key="com.haulmont.rcb.storybook" value="false" />
+      </map>
+    </option>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="03ab838e-5550-41ca-9662-a810fe0f9820" name="Changes" comment="" />
+      <created>1693937093335</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693937093335</updated>
+      <workItem from="1693937094547" duration="914000" />
+      <workItem from="1693955125163" duration="2011000" />
+      <workItem from="1693963579584" duration="31000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
