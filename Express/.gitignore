@@ -1,4 +1,4 @@
-/.vscode
+### Node template
 # Logs
 logs
 *.log
@@ -41,7 +41,6 @@ build/Release
 
 # Dependency directories
 node_modules/
-*node_modules/
 jspm_packages/
 
 # Snowpack dependency directory (https://snowpack.dev/)
@@ -130,12 +129,6 @@ dist
 .yarn/build-state.yml
 .yarn/install-state.gz
 .pnp.*
-/Express/node_modules/
-/Express/node_modules/
-/To-do-list/node_modules/
-/z_Misc/2.4 QR Code Project/node_modules
-/z_Misc/2.3 NPM/node_modules
-/z_Misc/EJS/node_modules
-/z_Misc/Mongoos/node_modules
-/z_Misc/
+
+*.idea
 
